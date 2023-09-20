@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="104dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="48dp"
+
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#FDFAFA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:drawableRight="@drawable/tick"
+        android:paddingRight="10sp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/editbg"
+        android:drawableLeft="@drawable/person2"
+        android:drawablePadding="15dp"
+
+        android:hint="User"
+        android:paddingLeft="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/editbg"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="15sp"
+        android:hint="Password"
+        android:paddingLeft="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/edit1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edit1"
+        app:layout_constraintTop_toBottomOf="@+id/edit1" />
+
+    <Button
+
+        android:id="@+id/button2"
+        android:layout_width="293dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#A50FE8"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edit2"
+        app:layout_constraintStart_toStartOf="@+id/edit2"
+        app:layout_constraintTop_toBottomOf="@+id/edit2" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="181dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:text="Forgot your password ?"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="299dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="---- or connect with ----"
+        android:textColor="#E61B60"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/t2"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/t2"
+        app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="160dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="#2196F3"
+        android:drawableLeft="@drawable/fb"
+        android:text="Facebook"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="161dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="#F42727"
+        android:drawableLeft="@drawable/google"
+        android:text="Google"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="173dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Don't have account ?"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sing up!"
+        android:textColor="#F30C68"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
